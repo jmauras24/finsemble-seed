@@ -158,7 +158,7 @@ function relocateAccountDetail() {
  * Everything needs to happen after Finsemble is ready
  */
 FSBL.addEventListener("onReady", function () {
-	alert(FSBL.Clients.WindowClient.options.customData.component["account-type"]); // --> STEP 3
+	//alert(FSBL.Clients.WindowClient.options.customData.component["account-type"]); // --> STEP 3
 
 	FSBL.Clients.WindowClient.setWindowTitle("Account List");
 	renderPage();

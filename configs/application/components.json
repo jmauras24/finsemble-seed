@@ -1,33 +1,105 @@
 {
     "comment": "Houses config for custom components that you'd like to import into Finsemble.",
     "components": {
-		"Finsemble Documentation": {
-			"window": {
-				"url": "http://documentation.chartiq.com/finsemble",
-				"left": "center",
-				"top": "center",
-				"height": 800,
-				"width": 1000
-			},
-			"component": {},
-			"foreign": {
-				"services": {
-					"dockingService": {
-						"isArrangable": true
-					}
-				},
-				"components": {
-					"App Launcher": {
-						"launchableByUser": false
-					},
-					"Window Manager": {
-						"persistWindowState": false,
-						"FSBLHeader": true,
-						"showLinker": false
-					}
-				}
-			}
-		},
+        "Hello": {
+            "window": {
+                "url": "$applicationRoot/components/Hello/Hello.html",
+                "frame": false,
+                "resizable": true,
+                "autoShow": true,
+                "top": "center",
+                "left": "center",
+                "width": 400,
+                "height": 400
+            },
+            "component": {
+                "inject": false,
+                "spawnOnStartup": true
+            },
+            "foreign": {
+                "services": {
+                    "dockingService": {
+                        "canGroup": true,
+                        "isArrangable": true
+                    }
+                },
+                "components": {
+                    "App Launcher": {
+                        "launchableByUser": true
+                    },
+                    "Window Manager": {
+                        "FSBLHeader": true,
+                        "persistWindowState": true
+                    },
+                    "Toolbar": {
+                        "iconClass": "Hello"
+                    }
+                }
+            }
+        },
+        "World": {
+            "window": {
+                "url": "$applicationRoot/components/World/World.html",
+                "frame": false,
+                "resizable": true,
+                "autoShow": true,
+                "top": "center",
+                "left": "center",
+                "width": 302,
+                "height": 375
+            },
+            "component": {
+                "inject": false,
+                "spawnOnStartup": true
+            },
+            "foreign": {
+                "services": {
+                    "dockingService": {
+                        "canGroup": true,
+                        "isArrangable": true
+                    }
+                },
+                "components": {
+                    "App Launcher": {
+                        "launchableByUser": true
+                    },
+                    "Window Manager": {
+                        "FSBLHeader": true,
+                        "persistWindowState": true
+                    },
+                    "Toolbar": {
+                        "iconClass": "World"
+                    }
+                }
+            }
+        },
+        "Finsemble Documentation": {
+            "window": {
+                "url": "http://documentation.chartiq.com/finsemble",
+                "left": "center",
+                "top": "center",
+                "height": 800,
+                "width": 1000
+            },
+            "component": {},
+            "foreign": {
+                "services": {
+                    "dockingService": {
+                        "isArrangable": true
+                    }
+                },
+                "components": {
+                    "App Launcher": {
+                        "launchableByUser": false
+                    },
+                    "Window Manager": {
+                        "persistWindowState": false,
+                        "FSBLHeader": true,
+                        "showLinker": false
+                    }
+                }
+            }
+        },
         "Getting Started Tutorial": {
             "window": {
                 "url": "https://documentation.chartiq.com/finsemble/tutorial-gettingStarted.html",
@@ -35,7 +107,7 @@
                 "width": 1000
             },
             "component": {
-                "spawnOnStartup": true
+                "spawnOnStartup": false
             },
             "foreign": {
                 "services": {
@@ -56,64 +128,135 @@
             }
         },
         "Docking Move Mask": {
-			"window": {
-				"url": "$applicationRoot/components/dockingGroupMask/dockingGroupMask.html",
-				"frame": false,
-				"resizable": false,
-				"showTaskbarIcon": false,
-				"options": {
-					"opacity": 0.7,
-					"autoShow": false
-				}
-			},
-			"component": {
-				"category": "system"
-			},
-			"foreign": {
-				"services": {
-					"dockingService": {
-						"isArrangable": false
-					}
-				},
-				"components": {
-					"App Launcher": {
-						"launchableByUser": false
-					},
-					"Window Manager": {
-						"FSBLHeader": false,
-						"persistWindowState": false
-					}
-				}
-			}
+            "window": {
+                "url": "$applicationRoot/components/dockingGroupMask/dockingGroupMask.html",
+                "frame": false,
+                "resizable": false,
+                "showTaskbarIcon": false,
+                "options": {
+                    "opacity": 0.7,
+                    "autoShow": false
+                }
+            },
+            "component": {
+                "category": "system"
+            },
+            "foreign": {
+                "services": {
+                    "dockingService": {
+                        "isArrangable": false
+                    }
+                },
+                "components": {
+                    "App Launcher": {
+                        "launchableByUser": false
+                    },
+                    "Window Manager": {
+                        "FSBLHeader": false,
+                        "persistWindowState": false
+                    }
+                }
+            }
         },
         "windowTitleBar": {
-			"window": {
-				"url": "$applicationRoot/components/windowTitleBar/windowTitleBar.js",
-				"top": "center",
-				"left": "center",
-				"width": 358,
-				"height": 458,
-				"ephemeral": true
-			},
-			"component": {
-				"category": "system"
-			},
-			"foreign": {
-				"services": {
-					"dockingService": {
-						"isArrangable": false
-					}
-				},
-				"components": {
-					"App Launcher": {
-						"launchableByUser": false
-					},
-					"Window Manager": {
-						"FSBLHeader": false,
-						"persistWindowState": false
-					}
-				}
-			}
-		}
+            "window": {
+                "url": "$applicationRoot/components/windowTitleBar/windowTitleBar.js",
+                "top": "center",
+                "left": "center",
+                "width": 358,
+                "height": 458,
+                "ephemeral": true
+            },
+            "component": {
+                "category": "system"
+            },
+            "foreign": {
+                "services": {
+                    "dockingService": {
+                        "isArrangable": false
+                    }
+                },
+                "components": {
+                    "App Launcher": {
+                        "launchableByUser": false
+                    },
+                    "Window Manager": {
+                        "FSBLHeader": false,
+                        "persistWindowState": false
+                    }
+                }
+            }
+        },
+        "accountList": {
+            "window": {
+                "url": "$applicationRoot/components/accountList/accountList.html",
+                "frame": false,
+                "resizable": true,
+                "autoShow": true,
+                "top": "center",
+                "left": "center",
+                "width": 800,
+                "height": 600
+            },
+            "component": {
+                "inject": false,
+                "account-type": "vip"
+            },
+            "foreign": {
+                "services": {
+                    "dockingService": {
+                        "canGroup": true,
+                        "isArrangable": true
+                    }
+                },
+                "components": {
+                    "App Launcher": {
+                        "launchableByUser": true
+                    },
+                    "Window Manager": {
+                        "FSBLHeader": true,
+                        "persistWindowState": true
+                    },
+                    "Toolbar": {
+                        "iconClass": "accountList"
+                    }
+                }
+            }
+        },
+        "accountDetail": {
+            "window": {
+                "url": "$applicationRoot/components/accountDetail/accountDetail.html",
+                "frame": false,
+                "resizable": true,
+                "autoShow": true,
+                "top": "center",
+                "left": "center",
+                "width": 800,
+                "height": 600
+            },
+            "component": {
+                "inject": false
+            },
+            "foreign": {
+                "services": {
+                    "dockingService": {
+                        "canGroup": true,
+                        "isArrangable": true
+                    }
+                },
+                "components": {
+                    "App Launcher": {
+                        "launchableByUser": true
+                    },
+                    "Window Manager": {
+                        "FSBLHeader": true,
+                        "persistWindowState": true
+                    },
+                    "Toolbar": {
+                        "iconClass": "accountDetail"
+                    }
+                }
+            }
+        }
     }
 }

@@ -1,6 +1,22 @@
 {
-	"windowTitleBar": {
-		"output": "components/windowTitleBar/windowTitleBar",
-		"entry": "./src/components/windowTitleBar/src/windowTitleBar.jsx"
-	}
+    "windowTitleBar": {
+        "output": "components/windowTitleBar/windowTitleBar",
+        "entry": "./src/components/windowTitleBar/src/windowTitleBar.jsx"
+    },
+    "accountList": {
+        "output": "components\\accountList\\accountList",
+        "entry": ".\\src\\components\\accountList\\accountList.js"
+    },
+    "accountDetail": {
+        "output": "components\\accountDetail\\accountDetail",
+        "entry": ".\\src\\components\\accountDetail\\accountDetail.js"
+    },
+    "Hello": {
+        "output": "components\\Hello\\Hello",
+        "entry": ".\\src\\components\\Hello\\Hello.js"
+    },
+    "World": {
+        "output": "components\\World\\World",
+        "entry": ".\\src\\components\\World\\World.js"
+    }
 }

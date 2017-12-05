@@ -1,0 +1,8 @@
+body {
+	margin:0px;
+}
+#messageHere {
+	color: white;
+	text-align: center;
+	font-size: 200%;
+}
